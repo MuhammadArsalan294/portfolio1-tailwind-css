@@ -1,89 +1,76 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image"; // Import Next.js Image component
+import Image from "next/image"; // Import Image component
+import "../styles/projects.css";
 
 export default function Projects() {
   return (
     <div id="projects">
-      <section className="text-gray-600 body-font bg-image">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              My Projects
-            </h1>
+      <section className="projects-section">
+        <div className="projects-container">
+          <div className="projects-header">
+            <h1 className="projects-title">My Projects</h1>
           </div>
-          <div className="flex flex-wrap -m-8">
-            <div className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer">
-              <div className="flex relative">
+          <div className="projects-grid">
+            {/* Project 1 - Facebook */}
+            <div className="project-card">
+              <div className="project-content">
                 <Image
                   src="/projects/facebook.jpg"
-                  alt="Facebook"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  width={500} // Set the width
-                  height={300} // Set the height
+                  alt="Facebook Project"
+                  width={500}
+                  height={300}
+                  className="project-image"
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Facebook
-                  </h1>
-                  <p className="leading-relaxed line-clamp-2">
-                    This is the project which I&apos;ve created for those who own a
-                    Facebook business.
+                <div className="project-overlay">
+                  <h1 className="project-name">Facebook</h1>
+                  <p className="project-description">
+                    This project is for those who own a Facebook business.
                   </p>
-                  <Link href={"https://clone-facebook-brown.vercel.app/"}>
-                    <p className="leading-relaxed text-indigo-500">
-                      View Project..
-                    </p>
+                  <Link href="https://clone-facebook-brown.vercel.app/">
+                    <p className="project-link">View Project</p>
                   </Link>
                 </div>
               </div>
             </div>
-
-            <div className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer">
-              <div className="flex relative">
+            {/* Project 2 - ID Card */}
+            <div className="project-card">
+              <div className="project-content">
                 <Image
                   src="/projects/id-card.jpg"
-                  alt="ID Card"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  width={500} // Set the width
-                  height={300} // Set the height
+                  alt="ID Card Project"
+                  width={500}
+                  height={300}
+                  className="project-image"
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    ID Card
-                  </h1>
-                  <p className="leading-relaxed line-clamp-2">
-                    This is the project which I&apos;ve created for those who own an ID card business.
+                <div className="project-overlay">
+                  <h1 className="project-name">ID Card</h1>
+                  <p className="project-description">
+                    This project is for those who own an ID card business.
                   </p>
-                  <Link href={"https://id-card-governor-house.vercel.app/"}>
-                    <p className="leading-relaxed text-indigo-500">
-                      View Project..
-                    </p>
+                  <Link href="https://id-card-governor-house.vercel.app/">
+                    <p className="project-link">View Project</p>
                   </Link>
                 </div>
               </div>
             </div>
-
-            <div className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer">
-              <div className="flex relative">
+            {/* Project 3 - Resume */}
+            <div className="project-card">
+              <div className="project-content">
                 <Image
-                  alt="Resume"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
                   src="/projects/resume.jpg"
-                  width={500} // Set the width
-                  height={300} // Set the height
+                  alt="Resume Project"
+                  width={500}
+                  height={300}
+                  className="project-image"
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Resume
-                  </h1>
-                  <p className="leading-relaxed line-clamp-2">
-                    This is the project which I&apos;ve created for those who own a resume business.
+                <div className="project-overlay">
+                  <h1 className="project-name">Resume</h1>
+                  <p className="project-description">
+                    This project is for those who own a resume business.
                   </p>
-                  <Link href={"https://hackathon-milestones-sigma.vercel.app/"}>
-                    <p className="leading-relaxed text-indigo-500">
-                      View Project..
-                    </p>
+                  <Link href="https://hackathon-milestones-sigma.vercel.app/">
+                    <p className="project-link">View Project</p>
                   </Link>
                 </div>
               </div>

@@ -1,53 +1,59 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { FaFacebookF, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import "../styles/footer.css"; // Import the custom CSS
 
 export default function Footer() {
-    return (
-  
-      <div className="bg-gray-400 bg-pic">
-         <footer className="text-gray-600 body-font">
-        <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+  return (
+    <div className="footer-container">
+      <footer className="footer">
+        <div className="footer-content">
+          <a className="footer-logo">
             <Image
               src="/images/logo.jpeg"
               alt="Logo Image"
               width={50}
               height={50}
             />
-            <span className="ml-3 text-xl">Developer</span>
+            <span className="footer-title">Developer</span>
           </a>
-          <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-1-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+          <p className="footer-text">
             © 2024 MA —
           </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <span className="social-icons">
             <Link
               target="_blank"
               href={"https://www.facebook.com/profile.php?id=100077733514114"}
-              className="ml-3 text-blue-800"
+              className="social-link"
             >
-              <FaFacebookF className="text-3xl hover:text-blue-900" />
+              <FaFacebookF className="social-icon" />
             </Link>
 
             <Link
               target="_blank"
               href={"https://www.instagram.com/muhammadarslan012/"}
-              className="ml-3 text-red-500"
+              className="social-link"
             >
-              <FaInstagramSquare className="text-3xl hover:text-red-600" />
+              <FaInstagramSquare className="social-icon" />
             </Link>
 
             <Link
               target="_blank"
               href={"https://www.linkedin.com/in/muhammad-arsalan-623179243/"}
-              className="ml-3  text-blue-800"
+              className="social-link"
             >
-              <FaLinkedin className="text-3xl  hover:text-blue-900" />
+              <FaLinkedin className="social-icon" />
             </Link>
           </span>
         </div>
       </footer>
+<<<<<<< HEAD
       </div>
     );
   }
+=======
+    </div>
+  );
+}
+>>>>>>> ebec52f44919525b1634b524e43bbafa0ac41293
