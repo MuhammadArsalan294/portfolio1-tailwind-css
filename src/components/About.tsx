@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div id="about">
             <section className="text-gray-600 body-font bg-image">
-                <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                         <Image
                             className="object-cover object-center rounded mx-auto w-[300px]"
@@ -23,17 +23,18 @@ export default function About() {
                             Science and Intermediate in Commerce and Graduation in Bachelor of
                             commerce (B.COM). Now I&apos;m on the way to learn Artificial
                             Intelligence. I completed a few steps of learning HTML, CSS, and
-                            JAVASCRIPT/TYPESCRIPT to become a Full-Stack Developer.
+                            JavaScript/TypeScript to become a Full-Stack Developer.
                         </p>
                         <p className="mb-8 leading-relaxed">
                             <strong>I Believe:</strong> &quot;Exploring the future one algorithm at
                             a time, because <strong>AI</strong> is the language of tomorrow&quot;
                         </p>
                         <div className="flex justify-center">
-                            <a href="/cv/cv1.pdf">
-                                <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                                    View CV
-                                </button>
+                            <a
+                                href="/cv/cv1.pdf"
+                                className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                            >
+                                View CV
                             </a>
                         </div>
                     </div>
@@ -42,3 +43,4 @@ export default function About() {
         </div>
     );
 }
+
