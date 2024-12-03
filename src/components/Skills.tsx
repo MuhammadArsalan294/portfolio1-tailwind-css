@@ -1,94 +1,71 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import "../styles/skills.css";  // Import custom CSS
-
-
 
 export default function Skills() {
   return (
     <div id="skills">
-      <section className="skills-section">
-        <div className="skills-container">
-          <div className="skills-header">
-            <h1 className="skills-title">
+      <section className="text-gray-600 bg-gray-300 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
               Skills
             </h1>
           </div>
-<<<<<<< HEAD
           <div className="flex flex-wrap -m-4">
-            {/*Skills*/}
-            <div className="p-4 w-full sm:w-1/2 md:w-1/3">
+            {/* HTML */}
+            <div className="p-4 sm:w-1/2 lg:w-1/3 w-full">
               <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
                 <div className="flex items-center mb-3">
                   <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
                     <FaCheckCircle className="text-xl font-bold" />
-=======
-          <div className="skills-grid">
-            {/* HTML Skill */}
-            <div className="skill-card">
-              <div className="skill-content">
-                <div className="skill-icon-title">
-                  <div className="skill-icon">
-                    <FaCheckCircle className="icon" />
->>>>>>> ebec52f44919525b1634b524e43bbafa0ac41293
                   </div>
-                  <h2 className="skill-name">HTML</h2>
+                  <h2 className="text-gray-900 text-lg title-font font-medium">
+                    HTML
+                  </h2>
                 </div>
-                <div className="skill-bar-container">
-                  <div className="skill-bar">
-                    <div className="skill-progress html-progress"></div>
+                <div className="flex-grow">
+                  <div className="relative h-1 w-full bg-gray-300 rounded-xl">
+                    <div className="absolute bg-indigo-500 h-1 rounded-xl w-[80%]"></div>
                   </div>
-                  <p className="skill-percentage">100%</p>
+                  <p className="text-indigo-500 font-bold text-right">80%</p>
                 </div>
               </div>
             </div>
-<<<<<<< HEAD
-            <div className="p-4 w-full sm:w-1/2 md:w-1/3">
+            {/* CSS */}
+            <div className="p-4 sm:w-1/2 lg:w-1/3 w-full">
               <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
                 <div className="flex items-center mb-3">
                   <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
                     <FaCheckCircle className="text-xl font-bold" />
-=======
-            {/* CSS Skill */}
-            <div className="skill-card">
-              <div className="skill-content">
-                <div className="skill-icon-title">
-                  <div className="skill-icon">
-                    <FaCheckCircle className="icon" />
->>>>>>> ebec52f44919525b1634b524e43bbafa0ac41293
                   </div>
-                  <h2 className="skill-name">CSS</h2>
+                  <h2 className="text-gray-900 text-lg title-font font-medium">
+                    CSS
+                  </h2>
                 </div>
-                <div className="skill-bar-container">
-                  <div className="skill-bar">
-                    <div className="skill-progress css-progress"></div>
+                <div className="flex-grow">
+                  <div className="relative h-1 w-full bg-gray-300 rounded-xl">
+                    <div className="absolute bg-indigo-500 h-1 rounded-xl w-[75%]"></div>
                   </div>
-                  <p className="skill-percentage">90%</p>
+                  <p className="text-indigo-500 font-bold text-right">75%</p>
                 </div>
               </div>
             </div>
-<<<<<<< HEAD
-            <div className="p-4 w-full sm:w-1/2 md:w-1/3">
+            {/* JavaScript/TypeScript */}
+            <div className="p-4 sm:w-1/2 lg:w-1/3 w-full">
               <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
                 <div className="flex items-center mb-3">
                   <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
                     <FaCheckCircle className="text-xl font-bold" />
-=======
-            {/* JavaScript/TypeScript Skill */}
-            <div className="skill-card">
-              <div className="skill-content">
-                <div className="skill-icon-title">
-                  <div className="skill-icon">
-                    <FaCheckCircle className="icon" />
->>>>>>> ebec52f44919525b1634b524e43bbafa0ac41293
                   </div>
-                  <h2 className="skill-name">JavaScript/TypeScript</h2>
+                  <h2 className="text-gray-900 text-lg title-font font-medium">
+                    JavaScript/TypeScript
+                  </h2>
                 </div>
-                <div className="skill-bar-container">
-                  <div className="skill-bar">
-                    <div className="skill-progress js-progress"></div>
+                <div className="flex-grow">
+                  <div className="relative h-1 w-full bg-gray-300 rounded-xl">
+                    <div className="absolute bg-indigo-500 h-1 rounded-xl w-[70%]"></div>
                   </div>
-                  <p className="skill-percentage">80%</p>
+                  <p className="text-indigo-500 font-bold text-right">70%</p>
                 </div>
               </div>
             </div>
@@ -98,4 +75,3 @@ export default function Skills() {
     </div>
   );
 }
-
